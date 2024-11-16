@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Collaboration Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>CampusConnect</h1>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Find Teammates</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Logout</a></li>
+               
+                <!-- Add other sections if needed -->
+                
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="landing-page">
+        <!-- text section -->
+        <div class="text-content">
+            <!-- <h1>Welcome to Campus Connect</h1> -->
+            <h2>Your gateway to collaboration, innovation, and networking.</p>
+            <p>At Campus Connect, we believe that every student deserves the opportunity to connect, collaborate, and thrive. Whether you’re searching for teammates for your next big project, looking to join a hackathon or ideathon, or simply wanting to expand your network: this is the platform built just for you.</h2>
+            <p margin-top="200px">Find like-minded teammates, explore opportunities, and showcase your skills in one place. Campus Connect empowers students to collaborate and achieve their full potential.</p>
+            <a href="#signup" class="cta-button">Join Campus Connect Today</a>
+        </div>
+
+          <!-- Image Section -->
+          <div class="image-content">
+            <img src="images/Designer.png" alt="Campus Connect Image" >
+        </div>
+
+    </div>
+
+    <!-- Main Dashboard Section -->
+    <main>
+        <section class="dashboard">
+            <h2>Welcome, [Username]</h2>
+            <div class="card-container">
+                <!-- Suggested Teammates Section -->
+                <div class="card">
+                    <h3>Suggested Teammates</h3>
+                    <ul id="teammates-list"></ul>
+                </div>
+                
+     <!-- Upcoming Events Section -->
+        <div class="card">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Hackathon: September 25th</li>
+                <li>AI Ideathon: October 10th</li>
+            </ul>
+        </div>
+
+                <!-- Notifications Section -->
+                <div class="card">
+                    <h3>Notifications</h3>
+                    <ul id="notifications-list">
+                        <li>No new notifications</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+<div class="container">
+         <!-- Projects Section -->
+         <section id="projects-section">
+            <h2>Projects</h2>
+            <div id="projects-container">
+                <!-- Form to add new project -->
+                <form id="project-form">
+                    <input type="text" id="project-title" placeholder="Enter project title" required>
+                    <input type="text" id="project-description" placeholder="Enter project description" required>
+                    <button type="submit">Add Project</button>
+                </form>
+                <!-- List of projects -->
+                <ul id="project-list"></ul>
+            </div>
+        </section>
+    
+     <!-- Teammate Finder Section -->
+     <section id="teammate-finder-section">
+        <h2>Teammate Finder</h2>
+        <div id="teammate-container">
+            <!-- Form to find teammates -->
+            <form id="teammate-form">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="skills" placeholder="Enter your skills" required>
+                <button type="submit">Submit</button>
+            </form>
+            <!-- List of teammate requests -->
+            <ul id="teammate-list"></ul>
+        </div>
+    </section>
+</div>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Learn more about our mission, vision, and values.</p>
+        </div>
+    
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Consulting</li>
+            </ul>
+        </div>
+    
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+    
+
+
+
+        <!-- <p>&copy; 2024 CampusConnect. All rights reserved.</p> -->
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

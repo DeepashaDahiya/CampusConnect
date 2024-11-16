@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CampusConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>CampusConnect</h1>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="teammate-finder.html">Find Teammates</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Profile Section -->
+    <main>
+        <section class="profile">
+            <h2>User Profile</h2>
+            <div class="profile-container">
+                <div class="profile-details">
+                    <img id="profile-photo" src="default-profile.png" alt="Profile Photo">
+                    <h3 id="profile-name">[Username]</h3>
+                    <p id="profile-bio">[Bio]</p>
+                    <p><strong>Interests:</strong> <span id="profile-interests">Coding, Design</span></p>
+                    <p><strong>Skills:</strong> <span id="profile-skills">JavaScript, React</span></p>
+                    <p><strong>Current Projects:</strong> <span id="profile-projects">Project A, Project B</span></p>
+                    <p><strong>Availability:</strong> <span id="profile-availability">Weekends</span></p>
+                    <p><strong>Social Links:</strong> 
+                        <a href="#" id="profile-linkedin">LinkedIn</a>, 
+                        <a href="#" id="profile-github">GitHub</a>
+                    </p>
+                </div>
+                <div class="profile-edit">
+                    <h3>Edit Profile</h3>
+                    <form id="edit-profile-form">
+                        <div class="form-group">
+                            <label for="edit-name">Name:</label>
+                            <input type="text" id="edit-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-photo">Profile Photo URL:</label>
+                            <input type="url" id="edit-photo" name="photo">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-bio">Bio:</label>
+                            <textarea id="edit-bio" name="bio" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-interests">Interests (comma separated):</label>
+                            <input type="text" id="edit-interests" name="interests">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-skills">Skills (comma separated):</label>
+                            <input type="text" id="edit-skills" name="skills">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-projects">Current Projects (comma separated):</label>
+                            <input type="text" id="edit-projects" name="projects">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-availability">Availability:</label>
+                            <input type="text" id="edit-availability" name="availability">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-linkedin">LinkedIn URL:</label>
+                            <input type="url" id="edit-linkedin" name="linkedin">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-github">GitHub URL:</label>
+                            <input type="url" id="edit-github" name="github">
+                        </div>
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 CampusConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
